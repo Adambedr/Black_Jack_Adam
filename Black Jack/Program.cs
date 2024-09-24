@@ -46,7 +46,7 @@ namespace Black_Jack
                     if (pointDealer >= 22)
                     {
                         Console.WriteLine();
-                        Console.WriteLine(" dealer fick över 22, du van");
+                        Console.WriteLine(" dealer fick över 22");
                         break;
                     }if (point >= 22)
                     {
@@ -65,10 +65,10 @@ namespace Black_Jack
                 Console.WriteLine();
                 Console.WriteLine("du förlora lika till nästa gång");
             }
-            else if (point > 22 && point > pointDealer)
+            else if (point < 22 && point > pointDealer)
             {
                 Console.WriteLine();
-                Console.WriteLine("du van, lets go, få din motståndare att ha en bra dag");
+                Console.WriteLine("du van");
             }
             else if (point == pointDealer)
             {
